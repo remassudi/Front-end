@@ -1,0 +1,251 @@
+.profilePage {
+    .bday {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+
+    .bookCover {
+        width: 70px;
+        height: auto;
+    }
+
+    .favBooks {
+        text-align: right;
+        padding-right: 30px;
+
+        a {
+            margin-right: 20px;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .favBooks {
+            padding-right: 5px;
+
+            a {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .bookshelve {
+        a {
+            text-align: center;
+            width: 33%;
+            font-size: 15px;
+            font-weight: 100;
+            color: unset !important;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .followers {
+        div {
+            a {
+                color: unset !important;
+            }
+        }
+    }
+
+    .userProfileButton {
+        width: 200px;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .btn:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .profile-image {
+        text-align: center;
+
+        img {
+            width: 180px;
+            height: 180px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    .description {
+        font-size: 12px !important;
+    }
+    .heading {
+        font-size: 14px !important;
+    }
+
+    .h7 {
+        font-size: 14px;
+    }
+}
+
+.editProf {
+    form {
+        padding-right: 60px !important;
+        width: 100%
+    }
+
+    @include media-breakpoint-down(xs) {
+        form {
+            padding-right: 0 !important;
+        }
+    }
+
+    .form-control-date {
+        border: 1px solid #cad1d7;
+        border-radius: 0.25rem;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+    }
+    .input-group-prepend-date {
+        border: 1px solid #cad1d7;
+        border-radius: 0.25rem;
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        box-shadow: none;
+        
+        span {
+            padding-top: 15px !important;
+        }
+    }
+
+    .edit-form {
+        box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+}
+
+.reviewDate {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.timeline {
+    a {
+        color: unset !important;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .bookCover {
+        width: 110px;
+        height: auto;
+        max-width: 180px;
+        border-radius: 0.25rem;
+    }
+
+    .btn {
+        padding: 7px 4px !important;
+        font-size: 10px !important;
+        font-family: Sahel;
+    }
+    .dropdown-toggle::after {
+        margin-right: 5px !important;
+        vertical-align: 2px !important;
+    }
+    .dropdown-menu {
+        text-align: right;
+        min-width: 140px !important;
+
+        .dropdown-item {
+            padding: 8px !important;
+            font-size: 10px !important;
+        }
+    }
+
+    h6 {
+        font-size: 13px !important;
+    }
+
+    .header {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .MuiRating-root{
+        direction: ltr;
+    }
+}
+
+.shelveList {
+    .shelvesCard {
+        min-width: 600px;
+    }
+    //@include media-breakpoint-down(xs) {
+    //    .shelvesCard {
+    //        margin-left: ;
+    //    }
+    //}
+    .shelveListName {
+        a {
+            line-height: 30px;
+            font-weight: 100;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .activeShelf {
+            font-weight: bold !important;
+            text-decoration: underline;
+        }
+    }
+
+    .MuiTableCell-head {
+        font-family: Sahel;
+        font-weight: bold;
+        text-align: center;
+    }
+    .MuiTableCell-body {
+        font-family: IRANSans;
+        text-align: center;
+    }
+
+    .shelfBookImg {
+        width: 10%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .removeBookShelf {
+        width: 5%;
+        padding: 0;
+
+        button {
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+        }
+        .fa-trash-o {
+            vertical-align: sub;
+            font-size: 18px;
+        }
+    }
+
+    .fa-pencil, .deleteShelf {
+        cursor: pointer;
+    }
+}
+
+.editProfA {
+    width: 100%;
+}

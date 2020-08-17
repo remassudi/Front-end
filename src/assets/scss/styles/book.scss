@@ -1,0 +1,156 @@
+.bookPage {
+    .bookCover {
+        width: 170px;
+        height: auto;
+        max-width: 180px;
+        border-radius: 0.25rem;
+    }
+    .bookName {
+        font-size: 25px;
+    }
+    .authorName {
+        font-size: 15px;
+    }
+    .summary {
+        font-size: 14px;
+        text-align: justify;
+        padding-top: 30px;
+    }
+    .bookRate {
+        margin-left: 11px;
+        padding-top: 2px;
+    }
+    .additionals {
+        position: absolute;
+        left: 3%;
+        padding-top: 16px;
+        z-index: 10;
+
+        .yourRate {
+            font-size: 12px;
+            margin-right: 5px;
+            padding-top: 2px;
+        }
+
+        .btn {
+            padding: 7px 4px !important;
+            font-size: 12px !important;
+            font-family: Sahel;
+        }
+        .dropdown-toggle::after {
+            margin-right: 5px !important;
+            vertical-align: 2px !important;
+        }
+        .dropdown-menu {
+            text-align: right;
+
+            .dropdown-item {
+                padding: 8px !important;
+            }
+        }
+    }
+
+    .MuiRating-root {
+        direction: ltr;
+
+        label {
+            display: block !important;
+        }
+    }
+    .MuiRating-label {
+        font-size: 20px !important;
+    }
+
+    .likeRate {
+        .MuiRating-root {
+            margin-left: 10px;
+        }
+        .MuiRating-iconFilled {
+            color: #f72151 !important;
+        }
+    }
+
+    .info {
+        padding-right: 50px;
+        div {
+            margin-top: 6px;
+        }
+        .infoName {
+            margin-left: 10px;
+            font-weight: bold;
+            font-family: Sahel;
+        }
+        .infoInfo {
+            display: inline-block;
+        }
+    }
+
+    .editBookButton {
+        padding: 0 !important;
+    }
+
+    @include media-breakpoint-down(md) {
+        .additionals {
+            width: 100%;
+            align-items: center;
+            position: relative;
+            left: unset;
+        }
+        .info {
+            padding-right: 5px;
+        }
+        .reviewProfileName {
+            font-size: 10px;
+        }
+    }
+    .inShelf {
+        background-color: #1d6d4736;
+        color: #1d6d47;
+        .fa-check-square {
+            color: #1d6d47;
+        }
+    }
+    .inShelf:hover {
+        background-color: #1d6d474d !important;
+    }
+
+    .reviewDetail {
+        a {
+            color: unset !important;
+        }
+    }
+
+    .fa-pencil-square {
+        cursor: pointer;
+    }
+}
+
+.addBook {
+    form {
+        padding-right: 80px !important;
+        padding-left: 80px !important;
+        width: 100%
+    }
+}
+
+.reviewIcon {
+    width: auto;
+    height: 45px;
+}
+
+.reviewProfileBook {
+    img {
+        width: auto;
+        height: 80px;
+    }
+    a {
+        color: unset !important;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.editBookTooltip {
+    font-family: IRANSans;
+    font-size: 12px;
+}

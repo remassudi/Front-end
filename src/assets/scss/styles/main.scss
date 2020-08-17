@@ -1,0 +1,169 @@
+body {
+  font-family: IRANSans;
+  direction: rtl;
+  text-align: right;
+  background-color: #fff;
+  color: #525f7f;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  background-image: url(../../img/proj/wallpaperbetter-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.background {
+  left: 0;
+  width: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  max-height: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.navbar-main {
+  font-family: Sahel;
+
+  .dropdown-menu {
+    min-width: 156px !important;
+    text-align: right;
+  }
+
+  .timelineNav {
+    color: white !important;
+    font-weight: 700;
+  }
+}
+
+.navBrand {
+  font-size: 25px;
+}
+
+.fontLale {
+  font-family: Lalezar;
+}
+.fontDigit {
+  font-family: SahelFD;
+}
+.fontSahel {
+  font-family: Sahel;
+}
+
+.directionLtr {
+  direction: ltr;
+  text-align: left;
+}
+
+.input_style {
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+  border: 0;
+  transition: box-shadow .15s ease;
+
+  .input-group-text {
+    border: 0;
+  }
+
+  input {
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.sweet-alert {
+  p {
+    direction: ltr;
+
+    span {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  h2 {
+    font-size: 17px !important;
+    font-weight: 500 !important
+  }
+  button {
+    margin-right: 0 !important;
+  }
+}
+
+.navUserIcon {
+  color: white;
+  font-size: 25px;
+}
+
+.navPic {
+  width: 25px;
+  height: 25px;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  padding: 0.625rem 0.75rem !important;
+}
+
+.modal-header {
+  .close {
+    margin: -1rem -1rem -1rem !important;
+  }
+
+  h5 {
+    font-family: Lalezar;
+  }
+}
+
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus {
+  color: #16181b !important;
+  background-color: #f6f9fc !important;
+}
+button:focus {
+  outline: none !important;
+}
+.dropdown-item:focus {
+  outline: none !important;
+}
+
+.home {
+  input, select {
+    height: 35px !important;
+  }
+  select {
+    font-size: 11px;
+  }
+  .searchInput::placeholder {
+    font-family: fontAwesome;
+  }
+  .header {
+    font-size: 25px !important;
+  }
+  .searchHeader {
+    text-align: right !important;
+  }
+
+  a {
+    color: unset;
+  }
+}
+
+.myPagination {
+  width: 50%;
+  border-radius: 4px;
+}
+
+@include media-breakpoint-down(md) {
+  .myPagination {
+    width: 100%;
+  }
+}
+
+.MuiPagination-ul {
+  //button {
+  //  background-color: white;
+  //}
+  //.MuiPaginationItem-ellipsis {
+  //  color: white;
+  //}
+}
